@@ -433,16 +433,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LDEBM42CG9;
 				INFOPLIST_FILE = Soco/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangyi.Soco;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangyi.soco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "d1b53fb3-469c-4490-aa55-f08a4a948011";
+				PROVISIONING_PROFILE_SPECIFIER = Soco_development;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,16 +453,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LDEBM42CG9;
 				INFOPLIST_FILE = Soco/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangyi.Soco;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangyi.soco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "5ee3c031-af36-41d7-a5fc-92bbdc9c344b";
+				PROVISIONING_PROFILE_SPECIFIER = Soco_distribution;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
